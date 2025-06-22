@@ -24,7 +24,11 @@ root.render(
         <Route exact path="/" Component={Home} />
         <Route exact path="/sobre" Component={About} /> 
         </Route>
+<<<<<<< HEAD
         <Route exact path="/videochamada/:roomId" Component={VideoCall} />
+=======
+        <Route exact path="/videochamada" Component={VideoCall} />
+>>>>>>> 44be876c5a9a30f430fe53b171c83ffc7d7ce649
          <Route exact path="/login" Component={Login} />
          <Route exact path="/cadastro" Component={Register} />
           <Route exact path='/meuPerfil' Component={MyProfile} />
