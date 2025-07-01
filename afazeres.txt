@@ -1,0 +1,5 @@
+avisar a quem ligou que a chamada foi recusada
+proteger as rotas
+Criar o blog
+Criar o sobre
+Criar o footer
