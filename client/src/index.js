@@ -10,9 +10,11 @@ import MainLayout from './components/MainLayout/MainLayout';
 import MyProfile from './pages/myProfile/MyProfile';
 import { ToastContainer } from 'react-toastify'; 
 import { AuthProvider } from './context/UserContext';
+import Editor from './pages/Editor/Editor';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
+import Blog from './pages/Blog/Blog';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +31,8 @@ root.render(
          <Route path="/login" Component={Login} />
          <Route path="/cadastro" Component={Register} />
           <Route path='/meuPerfil' Component={MyProfile} />
+          <Route path='/EditorBlog' Component={Editor} />
+          <Route path='blog' Component={Blog} />
       </Routes>
   </Router>
   </AuthProvider>

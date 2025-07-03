@@ -1,4 +1,5 @@
 avisar a quem ligou que a chamada foi recusada
+Separas as Models e os Controllers
 proteger as rotas
 Criar o blog
 Criar o sobre
