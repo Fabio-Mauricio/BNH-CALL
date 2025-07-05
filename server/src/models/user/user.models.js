@@ -119,16 +119,6 @@ const searchFriends = async(req, res) => {
     return rows
 }
 
-const postBlog = async(req, res) => {
-    const {title, content} = req.body
-    const query = `INSERT INTO posts (title, content) VALUES (?, ?) `
-    conn.execute(query, [title, content])
-}
 
-const getPosts = async(req, res) => {
-     const [rows] = await conn.query(
-        `SELECT * FROM posts`)
-    return rows
-}
 
-export {postUser, putUser, deleteUser, getUser, addContact, userLogin, getFriends, searchFriends, postBlog, getPosts }
+export {postUser, putUser, deleteUser, getUser, addContact, userLogin, getFriends, searchFriends }

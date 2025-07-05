@@ -48,10 +48,10 @@ const Home = () => {
          <div className="flex justify-center" >
            <div className="w-5/6 flex" > 
             <div className="w-full flex flex-wrap flex-col md:flex-col lg:flex-row items-center gap-12 mt-10 " >
-                    <Card image={'/images/logos/coca-cola_logo.png'} title={'TailwindCSS'} describe={'Usado para estilização do sistema'} />
-                     <Card image={'/images/logos/coca-cola_logo.png'} title={'TailwindCSS'} describe={'Usado para estilização do sistema'} />
-                      <Card image={'/images/logos/coca-cola_logo.png'} title={'TailwindCSS'} describe={'Usado para estilização do sistema'} />
-                       <Card image={'/images/logos/coca-cola_logo.png'} title={'TailwindCSS'} describe={'Usado para estilização do sistema'} />
+                    <Card image={'/images/logos/Tailwind_CSS_Logo.svg.png'} title={'TailwindCSS'} describe={'Utilizado para estilização do sistema'} />
+                     <Card image={'/images/logos/React-icon.svg.png'} title={'ReactJS'} describe={'Utilizado para o desenvolvimento do frontend do sistema'} />
+                      <Card image={'/images/logos/nodejs-logo-adesivo-sticker.png'} title={'NodeJS'} describe={'Utilizado para o desenvolvimento do backend do sistema'} />
+                       <Card image={'/images/logos/download.png'} title={'MySQL'} describe={'Utilizado como banco de dados do sistema'} />
                 </div>
             </div>
            </div>

@@ -1,6 +1,7 @@
 import express from 'express'
 const router = express.Router()
-import {deleteUserInDatabase, getUserFromDatabase, insertUserToDatabase, updateUserInDatabase, addContactInDatabase, logUserInDatabase, getSearchedUsersFromDatabase, getUserFriendsFromDatabase, insertPostInDatabase, getPostsFromDatabase} from '../../controllers/user.controller.js'
+import {deleteUserInDatabase, getUserFromDatabase, insertUserToDatabase, updateUserInDatabase, addContactInDatabase, logUserInDatabase, getSearchedUsersFromDatabase, getUserFriendsFromDatabase} from '../../controllers/user.controller.js'
+import { insertPostInDatabase, getPostsFromDatabase } from '../../controllers/blog.controller.js'
 import upload from '../../core/multer.js'
 
 router.get('/getUser/:id', getUserFromDatabase)

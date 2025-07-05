@@ -9,6 +9,7 @@ import { AuthContext } from "../../context/UserContext";
 import VideoCallModal from "./VideoCallModal";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
+import validationUser from "../../core/validationUser";
 
 const socket = io("http://localhost:8081", {
     transports: ['websocket'],
@@ -20,9 +21,9 @@ const socket = io("http://localhost:8081", {
 
 
 const VideoCall = () => {
-    const navigate = useNavigate()
 
-    const {user} = useContext(AuthContext)
+  const navigate = useNavigate()
+  const { user } = useContext(AuthContext)
 
     const [roomId, setRoomId] = useState()
     const [friends, setFriends ] = useState([])
@@ -168,6 +169,7 @@ useEffect(() => {
     setNotification(false);
   }
 }, [notification]);
+    
     return (
         <>
         <div className={`w-lvw h-lvh flex  ${isHidden ? '' : 'hidden'} `} >
@@ -188,7 +190,7 @@ useEffect(() => {
                             />
                         </div>
                         <p>{friendData.name}</p>
-                        <button onClick={() => handleClick(friendData.peerId, friendData.id, user.username)}>
+                        <button onClick={() => handleClick(friendData.peerId, friendData.id, user?.username)}>
                             <FaPhone />
                         </button>
                     </div>

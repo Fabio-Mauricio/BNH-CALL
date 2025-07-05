@@ -28,6 +28,8 @@ const NavBar = () => {
             <Link to={'/Sobre'} className="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600">Sobre</Link>
             <Link to={'/Contato'} className="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600">Contato</Link>
             <Link to={'/Videochamada'} className="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600">Vídeochamada</Link>
+            <Link to={'/blog'} className="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600">Blog</Link>
+
           </div>
         </div>
 
@@ -59,7 +61,6 @@ const NavBar = () => {
       <div ref={menuRef} className="hidden md:hidden" >
         <div className="px-2 pt-2 pd-3 sm:px-12 py-12">
           <Link to={"/"} className="hover:bg-gray-600 text-black block px-3 py-2 rounded-md text-base font-medium" >Home</Link>
-          <Link to={"/Sobre"} className="hover:bg-gray-600 text-black block px-3 py-2 rounded-md text-base font-medium" >Sobre</Link>
           <Link to={"/Contato"} className="hover:bg-gray-600 text-black block px-3 py-2 rounded-md text-base font-medium" >Contato</Link>
           <Link to={"/Videochamada"} className="hover:bg-gray-600 text-black block px-3 py-2 rounded-md text-base font-medium" >Videochamada</Link>
            <div className="flex items-center gap-2">

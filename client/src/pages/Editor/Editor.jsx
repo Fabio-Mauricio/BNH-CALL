@@ -1,10 +1,19 @@
-// Editor.jsx
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import validationUser from '../../core/validationUser';
+import { useNavigate } from 'react-router-dom';
+
 
 const Editor = () => {
+
+  const navigate = useNavigate()
+
+    useEffect(() => {
+      validationUser(navigate)
+    }, [navigate])
+
     const [title, setTitle] = useState()
     const [posts, setPosts] = useState([])
     const addPost = (content) => {
